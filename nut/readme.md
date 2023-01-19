@@ -6,4 +6,4 @@ Remember to set the correct local lan ip on upsd.conf file
 
 Config the server and go to HomeAssistant, add integration set the IP of the server and port, login with the username setted on upsd.users file
 
-![NUT HA Example](/HA_NUT_SERVER_INTEGRATION.png)
+![NUT HA Example](/nut/HA_NUT_SERVER_INTEGRATION.png)
