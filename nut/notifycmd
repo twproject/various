@@ -1,0 +1,4 @@
+#!/bin/bash
+EMAIL='monitoring@acme.com'
+
+echo -e "Subject: nut: $NOTIFYTYPE\r\n\r\nUPS: $UPSNAME\r\nAlert type: $NOTIFYTYPE\r\n\r\n`upsc $UPSNAME`" | msmtp -a default $EMAIL
