@@ -1,0 +1,15 @@
+[upsmon]
+    password = PASSWORD
+    upsmon master
+
+[admin]
+    password = PASSWORDADMIN
+    actions = set
+    actions = fsd
+    instcmds = all
+
+#QNAP want monuser/pass as default user
+
+[monuser]
+    password = pass
+    upsmon master
