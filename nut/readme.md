@@ -1,6 +1,6 @@
 <h1> NUT </h1>
 
-My NUT configuration workink in netserver mode providing access from HomeAssistant integration and QNAP Nas 
+My NUT configuration are working in netserver mode providing access from HomeAssistant integration and QNAP Nas 
 
 Remember to set the correct local lan ip on upsd.conf file
 
