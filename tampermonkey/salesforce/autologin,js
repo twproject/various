@@ -1,0 +1,35 @@
+// ==UserScript==
+// @name         Salesforce Auto Login
+// @namespace    https://github.com/twproject/
+// @version      1.0
+// @description  Automatically logs into Salesforce when both username and password fields are filled (with short delay for autofill support)
+// @author       TwProject (https://github.com/twproject/)
+// @match        https://*.my.salesforce.com/*
+// @grant        none
+// ==/UserScript==
+
+/*
+ 📌 Note:
+ This script does NOT store credentials.
+ It relies on the browser's built-in autofill feature (via saved passwords).
+ When both username and password fields are automatically filled by the browser,
+ this script waits a moment and then clicks the "Login" button for convenience.
+*/
+
+(function () {
+    'use strict';
+
+    // Wait a short moment to allow browser autofill to complete
+    setTimeout(() => {
+        const usernameElem = document.getElementById('username');
+        const passwordElem = document.getElementById('password');
+
+        if (
+            usernameElem && passwordElem &&
+            usernameElem.value.trim() !== '' &&
+            passwordElem.value.trim() !== ''
+        ) {
+            document.getElementById('Login')?.click();
+        }
+    }, 500); // Delay in milliseconds
+})();
