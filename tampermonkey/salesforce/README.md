@@ -1,6 +1,6 @@
 # Salesforce Tampermonkey Scripts 🚀
 
-> A collection of productivity userscripts for Salesforce Lightning, maintained by **RiccardoC**.
+> A collection of productivity userscripts for Salesforce Lightning, maintained by **TWProject**.
 
 These scripts are designed to improve your experience when working with Salesforce dashboards or login pages.
 
